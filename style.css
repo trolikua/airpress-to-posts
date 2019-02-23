@@ -1,0 +1,73 @@
+.choco-main {
+    border: 3px solid #957964;
+    border-radius: 30px;
+    padding: 25px;
+}
+.choco-tables-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.table-top table th,
+.table-top table td,
+.weigth-table table th,
+.weigth-table table td{
+    border: 2px solid #957964;
+    padding: 6px 15px;
+}
+.table-top table th,
+.table-top table td,
+.weigth-table table th {
+    background-color: #957964;
+    color: #ffffff;
+}
+.common-warning,
+.temperature {
+    text-align: right;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.ingredients {
+    padding-bottom: 25px;
+}
+@media print {
+    .single-choco #main {
+        width: 100mm;
+        height: 100mm;
+        font-size: 0.6em;
+    }
+    .single-choco #main h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .single-choco .choco-main {
+        padding: 5px;
+        border-radius: 12px;
+    }
+    .single-choco .wrap {
+        padding: 0;
+    }
+    .table-top table th,
+    .table-top table td,
+    .weigth-table table th,
+    .weigth-table table td{
+        /*border: 2px solid #957964;*/
+        padding: 2px;
+    }
+    .ingredients,
+    .common-warning,
+    .temperature {
+        padding-bottom: 8px;
+    }
+    .barcode img {
+        width: 100%;
+        height: auto;
+        padding: 0 8px;
+    }
+    .single-choco .site-content,
+    .single-choco .site-branding {
+        padding: 0;
+    }
+}
